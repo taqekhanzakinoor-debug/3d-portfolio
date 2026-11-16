@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Alauddin Khan is a Computer Science student at COMSATS University Islamabad, exploring AI, web development and useful digital products. Open to internships and collaborations.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alauddin Khan — Creative Developer & CS Student">
+  <meta property="og:description" content="Ideas into experiences. Exploring AI, web development and practical software projects.">
+  <title>Alauddin Khan — Creative Developer & CS Student</title>
+  <link rel="icon" href="assets/avatar.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient-orb" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Alauddin Khan, home">
+        <img src="assets/avatar.webp" alt="" width="37" height="37">
+        <span>ALAUDDIN<span class="brand-sub"> / KHAN</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Work</a>
+        <a href="#playground">Playground</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Change theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <a class="header-hire" href="#contact">LET'S TALK <span aria-hidden="true">↗</span></a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Work</a><a href="#playground">Playground</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="availability-dot" aria-hidden="true"></span> OPEN TO INTERNSHIPS & COLLABORATION <span class="eyebrow-divider" aria-hidden="true">/</span> ISLAMABAD, PK</div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 id="hero-heading">Alauddin<br><span>Khan<span class="name-period">.</span></span></h1>
+        <div class="hero-role"><span class="role-bar" aria-hidden="true"></span><p>Computer Science Student <span class="role-sep">/</span> <strong>Creative Developer</strong></p></div>
+        <p class="hero-description">I turn curiosity into useful digital experiences. Currently studying Computer Science at <strong>COMSATS University Islamabad</strong> and exploring the possibilities of AI, modern web development, and intelligent software.</p>
+        <p class="hero-description hero-description-second">I'm looking for an internship where I can learn from a great team, contribute to real projects, and grow as a developer.</p>
+        <div class="hero-cta">
+          <a class="button button-dark" href="#projects">EXPLORE MY WORK <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="mailto:taqekhanzakinoor@gmail.com?subject=Internship%20opportunity%20for%20Alauddin%20Khan">GET IN TOUCH <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-bottom-note"><span class="asterisk" aria-hidden="true">✳</span> A little code, a lot of curiosity.</div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-frame" id="portrait-shell" aria-label="Interactive three-dimensional particle portrait of Alauddin Khan. Move your pointer over the portrait or drag on touch screens to rotate it.">
+          <div class="visual-mesh" aria-hidden="true"></div>
+          <div class="visual-halo" aria-hidden="true"></div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <img class="portrait-fallback" id="portrait-fallback" src="assets/alauddin-portrait.webp" width="930" height="930" alt="Portrait of Alauddin Khan">
+          <canvas id="portrait-canvas" aria-hidden="true"></canvas>
+          <div class="visual-topline"><span>FIG. 01 / HUMAN, MEET DIGITAL</span><span class="tiny-pulse" aria-hidden="true"></span></div>
+          <div class="visual-meta"><span class="visual-meta-index">01 / 01</span><div><span class="visual-meta-title">PIXELS INTO PARTICLES</span><span class="visual-meta-sub">MOVE YOUR CURSOR TO EXPLORE</span></div></div>
+          <div class="visual-vertical" aria-hidden="true">REAL PHOTO → 3D POINT CLOUD</div>
+          <span class="visual-cross cross-a" aria-hidden="true">+</span><span class="visual-cross cross-b" aria-hidden="true">+</span>
+        </div>
+        <div class="portrait-controls" role="group" aria-label="Portrait appearance">
+          <div class="portrait-toggle"><button type="button" data-portrait="particles" class="active" aria-pressed="true">● PARTICLES</button><button type="button" data-portrait="photo" aria-pressed="false">◉ ORIGINAL</button></div>
+          <span class="portrait-caption">DRAG TO ROTATE <span aria-hidden="true">↗</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="snapshot container" aria-label="At a glance">
+      <div class="snapshot-item"><span class="micro-label">CURRENTLY</span><strong>Computer Science<br>Student</strong></div>
+      <div class="snapshot-item"><span class="micro-label">BASED IN</span><strong>Islamabad,<br>Pakistan</strong></div>
+      <div class="snapshot-item"><span class="micro-label">STUDYING AT</span><strong>COMSATS<br>University Islamabad</strong></div>
+      <div class="snapshot-item"><span class="micro-label">OPEN TO</span><strong>Internships &<br>Collaborations <span class="small-arrow" aria-hidden="true">↗</span></strong></div>
+    </section>
+
+    <div class="marquee-outer" aria-label="Areas of interest: AI, machine learning, web development, software engineering, creative coding">
+      <div class="marquee-inner" aria-hidden="true">
+        <span>ARTIFICIAL INTELLIGENCE</span><span class="ticker-star">✳</span><span>CREATIVE DEVELOPMENT</span><span class="ticker-star">✳</span><span>MACHINE LEARNING</span><span class="ticker-star">✳</span><span>WEB EXPERIENCES</span><span class="ticker-star">✳</span><span>SOFTWARE ENGINEERING</span><span class="ticker-star">✳</span>
+        <span>ARTIFICIAL INTELLIGENCE</span><span class="ticker-star">✳</span><span>CREATIVE DEVELOPMENT</span><span class="ticker-star">✳</span><span>MACHINE LEARNING</span><span class="ticker-star">✳</span><span>WEB EXPERIENCES</span><span class="ticker-star">✳</span><span>SOFTWARE ENGINEERING</span><span class="ticker-star">✳</span>
+      </div>
+    </div>
+
+    <section class="section about-section container" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <div class="section-kicker"><span class="section-dot"></span> 01 / ABOUT ME</div>
+        <h2 id="about-title">A curious mind.<br><em>A builder at heart.</em></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-main reveal">
+          <p class="large-copy">I like understanding <span class="underlined">how things work</span> — and then finding better ways to make them work.</p>
+          <p>I'm a Computer Science student at COMSATS University Islamabad with a growing interest in artificial intelligence, machine learning, and web development. I enjoy experimenting with emerging technologies and turning ideas into practical, user-friendly applications.</p>
+          <p>My goal is to develop strong engineering fundamentals, learn alongside experienced teams, and contribute meaningful work from day one. This portfolio is part of that journey.</p>
+          <div class="about-links"><a class="inline-link" href="https://github.com/taqekhanzakinoor-debug" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://www.linkedin.com/in/alauddin-khan-50ba9333a/" target="_blank" rel="noopener noreferrer">LINKEDIN <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <aside class="about-side reveal">
+          <div class="about-side-eyebrow">A FEW THINGS ABOUT ME <span aria-hidden="true">↘</span></div>
+          <div class="about-fact"><span>01</span><div><small>FOCUS</small><strong>AI / Web / Software</strong></div></div>
+          <div class="about-fact"><span>02</span><div><small>EDUCATION</small><strong>BS Computer Science<br><span>COMSATS University Islamabad</span></strong></div></div>
+          <div class="about-fact"><span>03</span><div><small>FOUNDATION</small><strong>FSc Pre-Engineering · 2024<br><span>Matric Science · 2022</span></strong></div></div>
+          <div class="about-fact"><span>04</span><div><small>APPROACH</small><strong>Learn. Build. Improve.</strong></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section expertise-section container" id="expertise" aria-labelledby="expertise-title">
+      <div class="section-heading section-heading-row reveal">
+        <div><div class="section-kicker"><span class="section-dot"></span> 02 / CAPABILITIES</div><h2 id="expertise-title">Tools of the <em>trade.</em></h2></div>
+        <p>Technologies I'm learning and applying through coursework, independent practice and personal projects.</p>
+      </div>
+      <div class="skills-list">
+        <div class="skill-row reveal"><span class="skill-number">01</span><h3>Programming<br>& OOP</h3><div class="skill-tags"><span>C++</span><span>Java · fundamentals</span><span>Python · fundamentals</span><span>Object-oriented programming</span></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-number">02</span><h3>Web<br>Development</h3><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive interfaces</span></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-number">03</span><h3>Databases<br>& Systems</h3><div class="skill-tags"><span>SQL</span><span>Database concepts</span><span>Computer networks</span><span>Information security</span></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-number">04</span><h3>AI &<br>Emerging Tech</h3><div class="skill-tags"><span>AI tools</span><span>Chatbots</span><span>Machine learning · exploring</span><span>AI engineering · exploring</span></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-number">05</span><h3>Everyday<br>Toolkit</h3><div class="skill-tags"><span>Git & GitHub</span><span>IT troubleshooting</span><span>IT training</span><span>Problem solving</span></div><span class="skill-arrow" aria-hidden="true">↗</span></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal">
+          <div><div class="section-kicker"><span class="section-dot"></span> 03 / SELECTED WORK</div><h2 id="projects-title">Ideas made <em>real.</em></h2></div>
+          <p>Small but meaningful projects where I practise building, learning and solving problems.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card-purple tilt-card reveal">
+            <div class="project-visual project-visual-connect">
+              <div class="project-topbar"><span>01 / INTERACTIVE WEB GAME</span><span>↗</span></div>
+              <div class="mini-connect" aria-hidden="true"><span class="mini-yellow"></span><span></span><span class="mini-purple"></span><span></span><span class="mini-yellow"></span><span></span><span></span><span></span><span class="mini-purple"></span><span class="mini-yellow"></span><span></span><span></span><span class="mini-purple"></span><span></span><span></span><span class="mini-yellow"></span><span class="mini-purple"></span><span></span><span class="mini-yellow"></span><span></span><span></span><span class="mini-purple"></span><span class="mini-purple"></span><span class="mini-yellow"></span><span></span><span></span><span></span><span></span><span class="mini-yellow"></span><span class="mini-purple"></span><span class="mini-yellow"></span><span></span><span></span><span></span><span></span></div>
+              <div class="visual-floater visual-floater-one">YOUR MOVE <span>↗</span></div>
+              <div class="visual-floater visual-floater-two">04 <small>IN A ROW</small></div>
+              <span class="project-corner-text">PLAY / THINK / REPEAT</span>
+            </div>
+            <div class="project-info"><div><div class="project-tagline">INTERACTIVE EXPERIENCE <span>•</span> LIVE</div><h3>Connect 4 <span>↗</span></h3><p>A browser-based strategy game with interactive moves and a playful interface. Part of my Board Game Hub project.</p><div class="project-pills"><span>JavaScript</span><span>HTML / CSS</span><span>Game logic</span></div></div><a class="project-action" href="https://connect4-gilt-psi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Play Connect 4 live">VISIT LIVE PROJECT <span>↗</span></a></div>
+          </article>
+          <article class="project-card project-card-cream tilt-card reveal">
+            <div class="project-visual project-visual-generator">
+              <div class="project-topbar"><span>02 / PERSONAL BRANDING</span><span>↗</span></div>
+              <div class="generator-window" aria-hidden="true"><div class="generator-bar"><span></span><span></span><span></span></div><div class="generator-body"><div class="generator-left"><div class="generator-tiny">MAKE IT YOURS.</div><div class="generator-head">Your next<br>big <em>hello.</em></div><div class="generator-line"></div><div class="generator-line short"></div><div class="generator-button">LET'S CONNECT ↗</div></div><div class="generator-avatar"><div></div></div></div></div>
+              <div class="generator-bubble" aria-hidden="true">✳</div>
+              <span class="project-corner-text">DESIGNED TO BE YOURS</span>
+            </div>
+            <div class="project-info"><div><div class="project-tagline">WEB TOOL <span>•</span> PERSONAL PROJECT</div><h3>Portfolio Generator <span>↗</span></h3><p>A tool concept that turns personal information into a ready-made portfolio page, making it easier to get online.</p><div class="project-pills"><span>Web development</span><span>UI design</span></div></div><a class="project-action" href="mailto:taqekhanzakinoor@gmail.com?subject=Portfolio%20Generator%20project" aria-label="Ask Alauddin about the Portfolio Generator project">ASK ABOUT THIS PROJECT <span>↗</span></a></div>
+          </article>
+          <article class="project-card project-card-blue tilt-card reveal">
+            <div class="project-visual project-visual-rental">
+              <div class="project-topbar"><span>03 / SOFTWARE SYSTEMS</span><span>↗</span></div>
+              <div class="rental-graphic" aria-hidden="true"><div class="rental-track"></div><div class="rental-car"><div class="car-top"></div><div class="car-body"></div><div class="car-wheel left"></div><div class="car-wheel right"></div></div><div class="rental-label">RENTAL SYSTEM <span>— 001</span></div></div>
+              <span class="project-corner-text">DATA MEETS THE ROAD</span>
+            </div>
+            <div class="project-info"><div><div class="project-tagline">MANAGEMENT SYSTEM <span>•</span> PERSONAL PROJECT</div><h3>Car Rental System <span>↗</span></h3><p>A system for organizing vehicles, customers and rentals in one structured place.</p><div class="project-pills"><span>OOP</span><span>Data management</span></div></div><a class="project-action" href="mailto:taqekhanzakinoor@gmail.com?subject=Car%20Rental%20Management%20System" aria-label="Ask Alauddin about the Car Rental System project">ASK ABOUT THIS PROJECT <span>↗</span></a></div>
+          </article>
+          <article class="project-card project-card-black tilt-card reveal">
+            <div class="project-visual project-visual-atlas">
+              <div class="project-topbar"><span>04 / EXPLORATION</span><span>↗</span></div>
+              <div class="atlas-graphic" aria-hidden="true"><div class="atlas-ring ring-one"></div><div class="atlas-ring ring-two"></div><div class="atlas-ring ring-three"></div><span class="atlas-center">✳</span><span class="atlas-star s1">✦</span><span class="atlas-star s2">✧</span><span class="atlas-star s3">+</span><span class="atlas-star s4">✦</span></div>
+              <span class="project-corner-text">EXPLORE THE COSMOS</span>
+            </div>
+            <div class="project-info"><div><div class="project-tagline">CREATIVE EXPLORATION <span>•</span> PERSONAL PROJECT</div><h3>Atlas Astrology <span>↗</span></h3><p>An astrology-themed project presenting zodiac and horoscope information in an approachable format.</p><div class="project-pills"><span>Information design</span><span>Exploration</span></div></div><a class="project-action" href="mailto:taqekhanzakinoor@gmail.com?subject=Atlas%20Astrology%20project" aria-label="Ask Alauddin about the Atlas Astrology project">ASK ABOUT THIS PROJECT <span>↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section playground-section container" id="playground" aria-labelledby="playground-title">
+      <div class="playground-head reveal"><div class="section-kicker"><span class="section-dot"></span> 04 / A LITTLE PLAY</div><h2 id="playground-title">Serious about code.<br><em>Not always serious.</em></h2><p>A working mini Connect 4 game right here on the page. Play with a friend on the same device — or just take both turns.</p></div>
+      <div class="game-shell reveal"><div class="game-copy"><div class="game-small-label"><span class="game-online-dot"></span> THE PLAYGROUND / 001</div><h3>Four in<br><em>a row.</em></h3><p>Two players. Seven columns. One simple goal: connect four of your discs before the other player does.</p><div class="game-how"><div><span>01</span> Pick a column</div><div><span>02</span> Take turns dropping discs</div><div><span>03</span> Line up four to win</div></div></div><div class="game-area"><div class="game-area-header"><span>CONNECT_4.EXE</span><span>2 PLAYERS / LOCAL</span></div><div class="game-status"><span id="game-disc" class="turn-disc player-one" aria-hidden="true"></span><span id="game-status" role="status" aria-live="polite">Purple's turn — choose a column.</span></div><div class="connect4-board" id="connect4-board" role="group" aria-label="Connect 4 game: select a numbered column to drop a disc"></div><div class="game-footer"><span>← CLICK A COLUMN TO PLAY</span><button type="button" class="game-reset" id="game-reset">↻ NEW GAME</button></div></div></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div class="contact-top reveal"><div class="section-kicker"><span class="section-dot"></span> 05 / SAY HELLO</div><div class="contact-availability"><span class="availability-dot" aria-hidden="true"></span> AVAILABLE FOR INTERNSHIPS</div></div>
+        <div class="contact-main reveal"><h2 id="contact-title">Have something<br><em>in mind?</em> <span>↗</span></h2><div class="contact-right"><p>I'm always happy to talk about internship opportunities, interesting projects, creative ideas or a good engineering challenge.</p><a class="contact-email" href="mailto:taqekhanzakinoor@gmail.com?subject=Hello%20Alauddin">LET'S START A CONVERSATION <span aria-hidden="true">↗</span></a></div></div>
+        <div class="contact-links"><a href="mailto:taqekhanzakinoor@gmail.com"><small>EMAIL</small><strong>taqekhanzakinoor@gmail.com</strong><span>↗</span></a><a href="https://www.linkedin.com/in/alauddin-khan-50ba9333a/" target="_blank" rel="noopener noreferrer"><small>LINKEDIN</small><strong>Connect with me</strong><span>↗</span></a><a href="https://github.com/taqekhanzakinoor-debug" target="_blank" rel="noopener noreferrer"><small>GITHUB</small><strong>Explore my code</strong><span>↗</span></a></div>
+        <footer class="footer"><span>© <span id="current-year">2026</span> ALAUDDIN KHAN</span><span>DESIGNED TO LEARN. BUILT TO GROW.</span><a href="#top">BACK TO TOP ↑</a></footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
