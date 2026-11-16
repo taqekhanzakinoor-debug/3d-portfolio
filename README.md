@@ -26,20 +26,4 @@ Open http://localhost:8000.
 
 ## Deploy
 
-Upload `index.html`, `styles.css`, `script.js`, and `assets/` to any static host, including Vercel, GitHub Pages, or Netlify. On Vercel, choose **Other** as the framework preset and leave the build command empty.
-
-## Change your details
-
-- Main content and project URLs: `index.html`
-- Colors, layout and design: `styles.css` (`:root` variables)
-- Particle portrait, animation and Connect 4 logic: `script.js`
-- Photo: `assets/alauddin-portrait.webp`
-- Avatar: `assets/avatar.webp`
-
-The three projects without live demo URLs use **Ask about this project** email links rather than inventing demo links. Replace those links with real live demos when they are available.
-
-## Technical notes
-
-The particle effect uses browser Canvas 2D with manually calculated 3D perspective transforms, not Three.js/WebGL. It is interactive depth rather than a full 3D mesh reconstruction. When disabled or unsupported, the original photo remains available. Fonts are fetched from Google Fonts when the device is online; system fonts serve as fallback.
-
-This build does not contain the original ZIP's `.git` history or temporary files. The original portfolio was not altered.
+UploadED ON VERCEL https://3d-portfolio-pi-jade.vercel.app
